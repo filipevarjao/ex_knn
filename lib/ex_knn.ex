@@ -2,12 +2,6 @@ defmodule ExKnn do
   @moduledoc false
 
   alias CSV
-
-  def main do
-    training = load_data_set("/home/filipe/workspace/scikit_test/k-nearest-neighbors/iris-dataset.csv")
-    test = load_data_set("/home/filipe/workspace/scikit_test/k-nearest-neighbors/iris-test.csv")
-    knn(training, test, 2)
-  end
   def knn(training_set, test_set, k) do
     classes = ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]
 
